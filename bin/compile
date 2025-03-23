@@ -19,7 +19,7 @@ warnings=$(mktemp)
 # Install mongodb to use mongo commands
 VERSION=8.0.6
 echo "Downloading and installing mongodb version $VERSION ..."
-BASE_FILE_NAME="mongodb-linux-x86_64-ubuntu1804-${VERSION}"
+BASE_FILE_NAME="mongodb-linux-x86_64-ubuntu2404-${VERSION}"
 download_url="https://fastdl.mongodb.org/linux/${BASE_FILE_NAME}.tgz"
 curl $download_url -s -o - | tar xzf - -C /tmp
 
